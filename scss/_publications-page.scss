@@ -1,0 +1,72 @@
+.page {
+  &__publications-page {
+  }
+}
+.publications-page {
+  margin-top: 175px;
+  padding-top: 37px;
+  background-color: $grey-bg;
+  @media (max-width: 890px) {
+    margin-top: 200px;
+  }
+  @media (max-width: 767.98px) {
+    padding-top: 30px;
+  }
+  @media (max-width: 479.98px) {
+    margin-top: 124px;
+    padding-top: 20px;
+  }
+}
+.tabs-publications-page {
+  &__items {
+    display: flex;
+    background: $grey-separator;
+    border-radius: 12px;
+    padding: 2px;
+    width: 262px;
+    margin: 0 auto 40px;
+    @media (max-width: 767.98px) {
+      margin: 0 auto 30px;
+    }
+    @media (max-width: 479.98px) {
+      margin: 0 auto 20px;
+    }
+  }
+
+  &__item {
+    @extend %ttnormsMedium;
+    line-height: calc(21px / 18px * 100%);
+    color: $main-regular;
+    padding: 7px 30px 8px;
+    border-radius: 10px;
+    transition: all 0.3s ease 0s;
+    &:not(:last-child) {
+      margin-right: 2px;
+    }
+    &:hover {
+      background-color: $grey-bg;
+    }
+  }
+  &__item.active {
+    background-color: $white;
+  }
+
+  &__body {
+  }
+
+  &__tab {
+    .publications {
+      padding: 0 0 63px;
+      @media (max-width: 767.98px) {
+        padding: 0 0 50px;
+      }
+      @media (max-width: 767.98px) {
+        padding: 0 0 40px;
+      }
+    }
+    .publications__button {
+      margin-top: 20px;
+      position: relative;
+    }
+  }
+}

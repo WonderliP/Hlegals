@@ -1,0 +1,114 @@
+.page {
+  &__advantages {
+  }
+}
+.advantages {
+  &__wrapper {
+    display: flex;
+    padding: 200px 112px 100px;
+    @media (max-width: 1240px) {
+      padding: 200px 0px 100px 40px;
+    }
+    @media (max-width: 991.98px) {
+      padding: 200px 0px 80px;
+    }
+    @media (max-width: 767.98px) {
+      flex-direction: column;
+      padding: 200px 0px 55px;
+    }
+    @media (max-width: 479.98px) {
+      padding: 120px 0 35px;
+    }
+  }
+
+  &__introduction {
+    flex: 0 1 60%;
+    padding-right: 45px;
+    @media (max-width: 991.98px) {
+      padding-right: 30px;
+    }
+    @media (max-width: 767.98px) {
+      padding-right: 0;
+      padding-bottom: 20px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    @extend %ttnormsRegular;
+    font-size: 21px;
+    line-height: calc(30px / 21px * 100%);
+    color: $black;
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+    @media (max-width: 991.98px) {
+      font-size: 18px;
+    }
+  }
+
+  &__list {
+    flex: 0 1 40%;
+    padding-left: 20px;
+    border-left: 4px solid $grey-separator;
+    height: 100%;
+    @media (max-width: 767.98px) {
+      border-left: none;
+      border-top: 4px solid $grey-separator;
+      padding-left: 0;
+      padding-top: 15px;
+    }
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 40px;
+    }
+    @media (max-width: 767.98px) {
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+    }
+    @media (max-width: 479.98px) {
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+.item-advantages {
+  &__heading {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  &__number {
+    font-size: 36px;
+    line-height: calc(42px / 36px * 100%);
+    background: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    padding-left: 6px;
+    @media (max-width: 991.98px) {
+      font-size: 36px;
+    }
+    @media (max-width: 767.98px) {
+      font-size: 34px;
+    }
+    @media (max-width: 479.98px) {
+      font-size: 32px;
+    }
+  }
+
+  &__text {
+    @extend %ttnormsRegular;
+    line-height: calc(21px / 18px * 100%);
+    color: $main-regular;
+  }
+}

@@ -1,0 +1,27 @@
+@mixin font($font-name, $file-name, $weight, $style) {
+  @font-face {
+    font-family: $font-name;
+    font-display: swap;
+    src: url("../fonts/#{$file-name}.woff2") format("woff2"),
+      url("../fonts/#{$file-name}.woff") format("woff");
+    font-weight: #{$weight};
+    font-style: #{$style};
+  }
+}
+
+@include font(TTNorms-Regular, TTNorms-Regular, 400, normal);
+@include font(TTNorms-Medium, TTNorms-Medium, 500, normal);
+@include font(TTNorms-Bold, TTNorms-Bold, 700, normal);
+
+%ttnormsRegular {
+  font-family: "TTNorms-Regular";
+  font-weight: 400;
+}
+%ttnormsMedium {
+  font-family: "TTNorms-Medium";
+  font-weight: 500;
+}
+%ttnormsBold {
+  font-family: "TTNorms-Bold";
+  font-weight: 700;
+}

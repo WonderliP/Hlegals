@@ -1,0 +1,231 @@
+.page {
+  &__team-member-page {
+  }
+}
+.team-member-page {
+  &__wrapper {
+    padding: 200px 112px 80px;
+    display: flex;
+    @media (max-width: 1140px) {
+      padding: 200px 0 80px 40px;
+    }
+    @media (max-width: 991.98px) {
+      padding: 200px 0 50px;
+    }
+    @media (max-width: 767.98px) {
+      flex-direction: column;
+    }
+    @media (max-width: 479.98px) {
+      padding: 124px 0 40px;
+    }
+  }
+
+  &__image {
+    flex: 0 1 40%;
+    img {
+      max-width: 100%;
+      min-width: 360px;
+      border-radius: 12px;
+    }
+    @media (max-width: 479.98px) {
+      img {
+        min-width: 0;
+      }
+    }
+  }
+
+  &__body {
+    flex: 0 1 60%;
+    padding-left: 40px;
+    @media (max-width: 991.98px) {
+      padding-left: 30px;
+    }
+    @media (max-width: 767.98px) {
+      padding-left: 0;
+    }
+  }
+
+  &__heading {
+    border-bottom: 4px solid $grey-separator;
+    padding: 20px 0;
+  }
+
+  &__description {
+    padding-top: 40px;
+    @media (max-width: 991.98px) {
+      padding-top: 30px;
+    }
+    @media (max-width: 767.98px) {
+      padding-top: 25px;
+    }
+    @media (max-width: 479.98px) {
+      padding-top: 20px;
+    }
+  }
+}
+
+.heading-team-member-page {
+  &__title {
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__secondary {
+    display: flex;
+    align-items: center;
+    @media (max-width: 991.98px) {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  }
+
+  &__position,
+  &__email {
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+    @media (max-width: 991.98px) {
+      &:not(:last-child) {
+        margin-right: 0px;
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  &__position {
+    white-space: nowrap;
+  }
+
+  &__email,
+  &__linkedin {
+    @extend %ttnormsMedium;
+    padding-left: 16px;
+    font-size: 16px;
+    line-height: calc(19px / 16px * 100%);
+    color: $active-regular;
+    white-space: nowrap;
+    position: relative;
+    transition: color 0.3s ease 0s;
+    &::before {
+      content: "";
+      position: absolute;
+      background-color: $grey-separator;
+      left: 0;
+      top: 50%;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      transform: translateY(-50%);
+    }
+    &:hover {
+      color: $accent;
+    }
+  }
+
+  &__email {
+  }
+
+  &__linkedin {
+  }
+}
+
+.biography-team-member-page {
+  &__text {
+    @extend %ttnormsRegular;
+    font-size: 18px;
+    line-height: calc(26px / 18px * 100%);
+    color: $black;
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+  &:not(:last-child) {
+    margin-bottom: 40px;
+  }
+  @media (max-width: 991.98px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+  @media (max-width: 767.98px) {
+    &:not(:last-child) {
+      margin-bottom: 25px;
+    }
+  }
+  @media (max-width: 479.98px) {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.education-team-member-page {
+  &__subtitle {
+    color: $main-regular;
+    margin-bottom: 10px;
+  }
+
+  &__text {
+    @extend %ttnormsRegular;
+    font-size: 18px;
+    line-height: calc(26px / 18px * 100%);
+    color: $black;
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+  &:not(:last-child) {
+    margin-bottom: 40px;
+  }
+  @media (max-width: 991.98px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+  @media (max-width: 767.98px) {
+    &:not(:last-child) {
+      margin-bottom: 25px;
+    }
+  }
+  @media (max-width: 479.98px) {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.experience-team-member-page {
+  &__subtitle {
+    color: $main-regular;
+    margin-bottom: 10px;
+  }
+
+  &__text {
+    @extend %ttnormsRegular;
+    font-size: 18px;
+    line-height: calc(26px / 18px * 100%);
+    color: $black;
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+  &:not(:last-child) {
+    margin-bottom: 40px;
+  }
+  @media (max-width: 991.98px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+  @media (max-width: 767.98px) {
+    &:not(:last-child) {
+      margin-bottom: 25px;
+    }
+  }
+  @media (max-width: 479.98px) {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+}

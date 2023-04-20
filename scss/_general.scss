@@ -1,0 +1,64 @@
+// Розмір шрифту
+$fontSize: 18px;
+// Налаштування обмежучого контейнеру
+// Внутрішній padding обмежуючого контейнеру (по 15px зліва і справа)
+$paddingContainer: 40px;
+$maxWidth: 1320px + $paddingContainer;
+// Налаштування сторінки
+body {
+  @extend %ttnormsBold;
+  font-size: $fontSize;
+}
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: clip;
+}
+
+.page {
+  flex: 1 1 auto;
+}
+
+.container {
+  max-width: $maxWidth;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.experience-and-services,
+.intro-services {
+  background: $gradient-supersoft;
+  border-radius: 0px 0px 12px 12px;
+  position: relative;
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+    height: 10px;
+    left: 50%;
+    border-radius: 0px 0px 12px 12px;
+    transform: translateX(-50%);
+  }
+  &::after {
+    width: calc(100% - 20px);
+    bottom: -10px;
+    background-color: #cacadb;
+  }
+  &::before {
+    width: calc(100% - 40px);
+    bottom: -20px;
+    background: #e7e7f2;
+  }
+}
+
+.intro-services {
+  background: linear-gradient(
+    220.57deg,
+    #323264 72.93%,
+    #323264 20.17%,
+    #643e72 88.46%
+  );
+  background-position: bottom;
+}

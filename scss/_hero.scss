@@ -1,0 +1,54 @@
+.page {
+  &__hero {
+  }
+}
+.hero {
+  background: linear-gradient(180deg, rgba(50, 50, 100, 0) 16.67%, #323264 100%)
+      bottom/ 100% 200px no-repeat,
+    url(../img/hero/long-p.svg) 50% 250px no-repeat,
+    url(../img/hero/decor.svg) 50% 100px no-repeat, $gradient-soft;
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  min-height: 600px;
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  @media (max-width: 479.98px) {
+    background: linear-gradient(
+          180deg,
+          rgba(50, 50, 100, 0) 16.67%,
+          #323264 100%
+        )
+        bottom/ 100% 200px no-repeat,
+      url(../img/hero/long-p.svg) 50% 190px no-repeat, $gradient-soft;
+  }
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__title {
+    @extend %ttnormsMedium;
+    font-size: 38px;
+    line-height: calc(45px / 38px * 100%);
+    text-align: center;
+    color: $white;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    max-width: 600px;
+  }
+
+  &__link-down {
+    display: block;
+    text-align: center;
+    position: absolute;
+    bottom: 20px;
+    z-index: 2;
+  }
+}

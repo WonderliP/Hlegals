@@ -1,0 +1,40 @@
+.page {
+  &__social-networks {
+  }
+}
+.social-networks {
+  &__wrapper {
+    max-width: 866px;
+    margin: 0 auto;
+    padding: 0 22px;
+    @media (max-width: 767.98px) {
+      padding: 0;
+    }
+  }
+
+  &__items {
+    border-top: 4px solid $grey-bg-alt;
+    padding: 20px 0 60px;
+    display: flex;
+    @media (max-width: 767.98px) {
+      padding: 20px 0 50px;
+    }
+    @media (max-width: 479.98px) {
+      justify-content: center;
+      padding: 20px 0 40px;
+    }
+  }
+
+  &__item {
+    background-color: $grey-bg;
+    border-radius: 12px;
+    width: 42px;
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+}

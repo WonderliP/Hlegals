@@ -1,0 +1,97 @@
+.icon-facebook {
+  transition: all 0.3s ease 0s;
+}
+.link-arrow {
+  transition: all 0.3s ease 0s;
+}
+.subtitle {
+  font-size: 14px;
+  line-height: calc(17px / 14px * 100%);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: color 0.3s ease 0s;
+}
+.title {
+  font-size: 42px;
+  line-height: calc(50px / 42px * 100%);
+  background: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  @media (max-width: 991.98px) {
+    font-size: 38px;
+  }
+  @media (max-width: 767.98px) {
+    font-size: 34px;
+  }
+  @media (max-width: 479.98px) {
+    font-size: 32px;
+  }
+}
+
+.position {
+  @extend %ttnormsRegular;
+  font-size: 16px;
+  line-height: calc(22px / 16px * 100%);
+  color: $grey-text;
+}
+
+.button {
+  display: inline-block;
+  background-color: $active-regular;
+  box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
+  border-radius: 12px;
+  font-size: 14px;
+  line-height: calc(17px / 14px * 100%);
+  text-align: center;
+  color: $white;
+  white-space: nowrap;
+  padding: 16px 78px 17px;
+  transition: all 0.3s ease 0s;
+  &:hover {
+    background-color: $active-hover;
+    box-shadow: 0px 0px 30px rgba(36, 163, 255, 0.5);
+  }
+  &:active {
+    background-color: $active-active;
+    box-shadow: none;
+  }
+}
+
+.swiper-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  .swiper-pagination-bullet {
+    background-color: $active-regular;
+    opacity: 0.2;
+    width: 16px;
+    height: 16px;
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+  .swiper-pagination-bullet-active {
+    opacity: 1;
+  }
+}
+
+.map {
+  iframe {
+    width: 100%;
+    height: 600px;
+  }
+}
+
+.area {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: auto;
+}

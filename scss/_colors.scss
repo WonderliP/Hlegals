@@ -1,0 +1,43 @@
+$accent: #f0145a;
+$black: #000000;
+$white: #ffffff;
+
+$main-regular: #323264;
+$main-alt: #46466e;
+$main-soft: #686887;
+
+$active-regular: #24a3ff;
+$active-hover: #0085ff;
+$active-active: #006ccf;
+
+$grey-bg: #f5f5fa;
+$grey-bg-alt: #ededf7;
+$grey-text: #b3b3ba;
+$grey-separator: #e6e6f0;
+
+$gradient-regular: linear-gradient(
+  128.63deg,
+  #323264 0%,
+  #323264 73.96%,
+  #a54b5f 100%
+);
+$gradient-soft: linear-gradient(
+  42.01deg,
+  #323264 14.33%,
+  #323264 51.39%,
+  #7a425e 87.53%
+);
+$gradient-red: linear-gradient(121.42deg, #f0145a 30.65%, #693264 107.33%);
+$gradient-supersoft: linear-gradient(
+  228.57deg,
+  #323264 11.93%,
+  #323264 57.17%,
+  #643e72 87.46%
+);
+$gradient-red-text: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
+$gradient-icon: linear-gradient(180deg, #ef8080 0%, #f0145a 100%);
+$gradient-text-red-reversed: linear-gradient(
+  90.13deg,
+  #ef8080 0.84%,
+  #f0145a 99.96%
+);

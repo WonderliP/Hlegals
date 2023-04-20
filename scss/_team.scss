@@ -1,0 +1,141 @@
+.page {
+  &__team {
+  }
+}
+.team {
+  padding: 60px 0 20px;
+  @media (max-width: 991.98px) {
+    padding: 54px 0 20px;
+  }
+  @media (max-width: 767.98px) {
+    padding: 48px 0 15px;
+  }
+  @media (max-width: 479.98px) {
+    padding: 40px 0 15px;
+  }
+  &__wrapper {
+  }
+
+  &__swiper {
+  }
+}
+.swiper-team {
+  &__wrapper {
+  }
+
+  &__slide {
+  }
+}
+.slide-swiper-team {
+  display: flex;
+  background-color: $grey-bg;
+  border-radius: 12px;
+  position: relative;
+  @media (max-width: 991.98px) {
+    flex-direction: column-reverse;
+  }
+  &__image {
+    flex: 0 1 33.333%;
+    padding-right: 40px;
+    img {
+      max-width: 100%;
+      height: 100%;
+      border-radius: 12px 0px 0px 12px;
+    }
+    @media (max-width: 991.98px) {
+      display: none;
+    }
+  }
+
+  &__body {
+    flex: 0 1 66.667%;
+    padding: 40px 40px 40px 0;
+    @media (max-width: 991.98px) {
+      flex: 0 1 100%;
+      padding: 40px 40px 15px 20px;
+    }
+    @media (max-width: 767.98px) {
+      padding: 30px 0px 15px 20px;
+    }
+    @media (max-width: 479.98px) {
+      padding: 20px 0px 10px 20px;
+    }
+  }
+
+  &__subtitle {
+    color: $active-regular;
+    &:hover {
+      color: $accent;
+      .link-arrow {
+        stroke: $accent;
+      }
+    }
+  }
+
+  &__title {
+    max-width: 800px;
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+    @media (max-width: 479.98px) {
+      font-size: 28px;
+    }
+  }
+
+  &__about {
+    @extend %ttnormsRegular;
+    color: $grey-text;
+    font-weight: 400;
+    @media (max-width: 991.98px) {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__name {
+    line-height: calc(21px / 18px * 100%);
+    &:not(:last-child) {
+      margin-bottom: 5px;
+    }
+  }
+
+  &__position {
+    font-size: 16px;
+    line-height: calc(22px / 16px * 100%);
+  }
+}
+.about-slide-team__image {
+  display: none;
+  img {
+    border-radius: 50%;
+  }
+  @media (max-width: 991.98px) {
+    display: block;
+    padding-right: 10px;
+  }
+}
+.swiper-team-pagination {
+  margin-top: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  .swiper-pagination-bullet {
+    background-color: $active-regular;
+    opacity: 0.2;
+    width: 16px;
+    height: 16px;
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+  .swiper-pagination-bullet-active {
+    opacity: 1;
+  }
+  @media (max-width: 479.98px) {
+    margin-top: 23px;
+  }
+}

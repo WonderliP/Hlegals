@@ -1,0 +1,115 @@
+.page {
+  &__publication-post {
+  }
+}
+.publication-post {
+  max-width: 906px;
+  margin: 0 auto;
+  &__wrapper {
+    padding: 40px 0;
+    @media (max-width: 767.98px) {
+      padding: 30px 0 40px;
+    }
+    @media (max-width: 479.98px) {
+      padding: 20px 0 40px;
+    }
+  }
+
+  &__text {
+    @extend %ttnormsRegular;
+    line-height: calc(26px / 18px * 100%);
+    color: $black;
+    padding: 0 22px;
+    &:not(:last-child) {
+      margin-bottom: 40px;
+    }
+    @media (max-width: 767.98px) {
+      padding: 0;
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+    }
+    @media (max-width: 479.98px) {
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  &__blockquote {
+    &:not(:last-child) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__title-list,
+  &__title-small {
+    padding: 0 22px;
+    font-size: 24px;
+    line-height: calc(28px / 24px * 100%);
+    color: $main-alt;
+    @extend %ttnormsMedium;
+    @media (max-width: 767.98px) {
+      padding: 0;
+      font-size: 20px;
+    }
+    @media (max-width: 479.98px) {
+      font-size: 18px;
+    }
+  }
+
+  &__title-list {
+    margin-bottom: 18px;
+  }
+
+  &__list {
+    padding: 0 22px 0 56px;
+    margin-bottom: 25px;
+    @media (max-width: 767.98px) {
+      padding: 0 0 0 30px;
+    }
+  }
+
+  &__image {
+    text-align: center;
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
+
+  &__title-small {
+    margin-bottom: 25px;
+    @media (max-width: 767.98px) {
+      margin-bottom: 20px;
+    }
+  }
+}
+.list-publication-post {
+  &__item {
+    list-style: decimal;
+    color: $accent;
+    padding-left: 10px;
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
+  &__text {
+    @extend %ttnormsRegular;
+    line-height: calc(26px / 18px * 100%);
+    color: $black;
+  }
+}
+.image-publication-post {
+  margin-bottom: 40px;
+  position: relative;
+  img {
+    max-width: 100%;
+  }
+  &__description {
+    @extend %ttnormsRegular;
+    font-size: 16px;
+    line-height: calc(22px / 16px * 100%);
+    text-align: center;
+    color: $grey-text;
+  }
+}

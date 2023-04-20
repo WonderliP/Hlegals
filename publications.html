@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Публікації</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container">
+          <div class="header__wrapper">
+            <div class="header__logo logo-header">
+              <a href="index.html">
+                <img src="img/header/logo-dark.svg" alt="Logo" />
+              </a>
+              <img
+                class="logo-header__slash"
+                src="img/header/slash.svg"
+                alt="Red slash"
+              />
+              <a href="#" class="logo-header__text logo-header__text--white-bg"
+                >публікації</a
+              >
+              <img
+                class="logo-header__symbol-slash"
+                src="img/header/symbol-slash.svg"
+                alt="Symbol slash"
+              />
+            </div>
+            <div class="header__contacts contacts contacts--white-bg">
+              <ul class="contacts__languages languages">
+                <li class="languages__item">
+                  <a href="#" class="languages__button languages__button-active"
+                    >УК</a
+                  >
+                </li>
+                <li class="languages__item">
+                  <a
+                    href="#"
+                    class="languages__button languages__button--white-bg"
+                    >EN</a
+                  >
+                </li>
+              </ul>
+              <ul class="contacts__contact-info contact-info">
+                <li class="contact-info__item">
+                  <a
+                    href="#"
+                    class="contact-info__location contact-info__location--white-bg"
+                    >Одеса, Адміральський пр., 3</a
+                  >
+                </li>
+                <li class="contact-info__item">
+                  <a
+                    href="tel:+380503901591"
+                    class="contact-info__phone contact-info__phone--white-bg"
+                    >+38 (050) 390 15 91</a
+                  >
+                </li>
+                <li class="contact-info__item">
+                  <a
+                    href="#"
+                    class="contact-info__facebook contact-info__facebook--white-bg"
+                  >
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g clip-path="url(#clip0_1_597)">
+                        <path
+                          class="icon-facebook"
+                          d="M24 12.0733C24 5.40541 18.6274 0 12 0C5.37258 0 0 5.40541 0 12.0733C0 18.0995 4.38823 23.0943 10.125 24V15.5633H7.07813V12.0733H10.125V9.41343C10.125 6.38755 11.9165 4.71615 14.6576 4.71615C15.9705 4.71615 17.3438 4.95195 17.3438 4.95195V7.92313H15.8306C14.3399 7.92313 13.875 8.85379 13.875 9.80857V12.0733H17.2031L16.6711 15.5633H13.875V24C19.6118 23.0943 24 18.0995 24 12.0733Z"
+                          fill="#24A3FF"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_1_597">
+                          <rect width="24" height="24" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <nav class="header__menu menu menu--white-bg">
+              <div class="menu__body">
+                <ul class="menu__list">
+                  <li class="menu__item">
+                    <a href="about.html" class="menu__link">про нас</a>
+                  </li>
+                  <li class="menu__item">
+                    <a href="services.html" class="menu__link">послуги</a>
+                  </li>
+                  <li class="menu__item">
+                    <a href="team.html" class="menu__link">команда</a>
+                  </li>
+                  <li class="menu__item">
+                    <a
+                      href="publications.html"
+                      class="menu__link menu__link--active"
+                      >публікації</a
+                    >
+                  </li>
+                  <li class="menu__item">
+                    <a href="contacts.html" class="menu__link">контакти</a>
+                  </li>
+                </ul>
+                <button class="icon-menu" type="button">
+                  <span></span>
+                </button>
+              </div>
+              <button class="icon-menu icon-menu--white-bg" type="button">
+                <span></span>
+              </button>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <main class="page">
+        <div class="page__publications-page publications-page">
+          <div class="container">
+            <div class="publications-page__wrapper">
+              <div class="publications-page__tabs tabs-publications-page">
+                <nav class="tabs-publications-page__items">
+                  <button
+                    class="tabs-publications-page__item"
+                    onclick="openPublications(event, 'news')"
+                    id="defaultOpen"
+                  >
+                    новини
+                  </button>
+                  <button
+                    class="tabs-publications-page__item"
+                    onclick="openPublications(event, 'company')"
+                  >
+                    компанія
+                  </button>
+                </nav>
+                <div class="tabs-publications-page__body">
+                  <div id="news" class="tabs-publications-page__tab">
+                    <section class="page__publications publications">
+                      <div class="publications__wrapper">
+                        <ul class="publications__list">
+                          <li class="publications__item item-publications">
+                            <div class="item-publications__body">
+                              <div class="item-publications__heading">
+                                <a
+                                  href="publications-entry.html"
+                                  class="item-publications__title"
+                                >
+                                  Валютний контроль помер, хай живе валютний
+                                  контроль!
+                                </a>
+                                <p class="item-publications__date">14 червня</p>
+                              </div>
+                              <p class="item-publications__text">
+                                Експерти проводять конференції, круглі столи та
+                                іншого штибу заходи на тему «лібералізація
+                                валютного законодавства».
+                                Юристи-експерти-новелісти стирають пальці об.
+                              </p>
+                            </div>
+                          </li>
+                          <li class="publications__item item-publications">
+                            <a
+                              href="publications-entry.html"
+                              class="item-publications__image"
+                            >
+                              <img
+                                src="img/publications/01.jpg"
+                                alt="Equity associate"
+                              />
+                            </a>
+                            <div class="item-publications__body">
+                              <div class="item-publications__heading">
+                                <a
+                                  href="publications-entry.html"
+                                  class="item-publications__title"
+                                  >Equity associate</a
+                                >
+                                <p class="item-publications__date">22 квітня</p>
+                              </div>
+                              <p class="item-publications__text">
+                                На проектах я джун. При цьому я співвласник
+                                юридичної фірми. Як це відбулося. Перед вступом
+                                батьки мені казали, що якщо буду…
+                              </p>
+                            </div>
+                          </li>
+                          <li class="publications__item item-publications">
+                            <a
+                              href="publications-entry.html"
+                              class="item-publications__image"
+                            >
+                              <img src="img/publications/02.jpg" alt="GDRP" />
+                            </a>
+                            <div class="item-publications__body">
+                              <div class="item-publications__heading">
+                                <a
+                                  href="publications-entry.html"
+                                  class="item-publications__title"
+                                >
+                                  Штраф для «Корпорації добра»: що буде з Google
+                                  та іншими за порушення GDPR
+                                </a>
+                                <p class="item-publications__date">
+                                  29 вересня
+                                </p>
+                              </div>
+                              <p class="item-publications__text">
+                                І чому стягнення у 50 млн євро може стати
+                                доленосним прецедентом За матеріалами Mind.ua 21
+                                січня Національна комісія із захисту даних.
+                              </p>
+                            </div>
+                          </li>
+                          <li class="publications__item item-publications">
+                            <a
+                              href="publications-entry.html"
+                              class="item-publications__image"
+                            >
+                              <img
+                                src="img/publications/03.jpg"
+                                alt="People are smiling"
+                              />
+                            </a>
+                            <div class="item-publications__body">
+                              <div class="item-publications__heading">
+                                <a
+                                  href="publications-entry.html"
+                                  class="item-publications__title"
+                                >
+                                  Заповіт міленіала
+                                </a>
+                                <p class="item-publications__date">19 серпня</p>
+                              </div>
+                              <p class="item-publications__text">
+                                Що і як передаватимуть у спадщину сучасні
+                                влогери, опініон лідери і криптомільйонери
+                                Типовий спадок українського покоління Х виглядає
+                                так: квартира у…
+                              </p>
+                            </div>
+                          </li>
+                          <li class="publications__item item-publications">
+                            <a
+                              href="publications-entry.html"
+                              class="item-publications__image"
+                            >
+                              <img
+                                src="img/publications/04.jpg"
+                                alt="Independence Square"
+                              />
+                            </a>
+                            <div class="item-publications__body">
+                              <div class="item-publications__heading">
+                                <a
+                                  href="publications-entry.html"
+                                  class="item-publications__title"
+                                >
+                                  Закон про мови: як зробити свій сайт
+                                  відповідним
+                                </a>
+                                <p class="item-publications__date">19 серпня</p>
+                              </div>
+                              <p class="item-publications__text">
+                                Наталія Кирик, керівник контент студії
+                                Wordfactory.ua По-перше, це красиво! Це аргумент
+                                номер один на користь україномовного сайту.
+                                По-друге, це ефективно. У…
+                              </p>
+                            </div>
+                          </li>
+                          <li class="publications__item item-publications">
+                            <a
+                              href="publications-entry.html"
+                              class="item-publications__image"
+                            >
+                              <img
+                                src="img/publications/03.jpg"
+                                alt="People are smiling"
+                              />
+                            </a>
+                            <div class="item-publications__body">
+                              <div class="item-publications__heading">
+                                <a
+                                  href="publications-entry.html"
+                                  class="item-publications__title"
+                                >
+                                  Заповіт міленіала
+                                </a>
+                                <p class="item-publications__date">19 серпня</p>
+                              </div>
+                              <p class="item-publications__text">
+                                Що і як передаватимуть у спадщину сучасні
+                                влогери, опініон лідери і криптомільйонери
+                                Типовий спадок українського покоління Х виглядає
+                                так: квартира у…
+                              </p>
+                            </div>
+                          </li>
+                          <li class="publications__item item-publications">
+                            <div class="item-publications__body">
+                              <div class="item-publications__heading">
+                                <a
+                                  href="publications-entry.html"
+                                  class="item-publications__title"
+                                >
+                                  Валютний контроль помер, хай живе валютний
+                                  контроль!
+                                </a>
+                                <p class="item-publications__date">14 червня</p>
+                              </div>
+                              <p class="item-publications__text">
+                                Експерти проводять конференції, круглі столи та
+                                іншого штибу заходи на тему «лібералізація
+                                валютного законодавства».
+                                Юристи-експерти-новелісти стирають пальці об.
+                              </p>
+                            </div>
+                          </li>
+                          <li class="publications__item item-publications">
+                            <a
+                              href="publications-entry.html"
+                              class="item-publications__image"
+                            >
+                              <img
+                                src="img/publications/05.jpg"
+                                alt="The kid play the guitar"
+                              />
+                            </a>
+                            <div class="item-publications__body">
+                              <div class="item-publications__heading">
+                                <a
+                                  href="publications-entry.html"
+                                  class="item-publications__title"
+                                >
+                                  Компенсація витрат на навчання дитини в
+                                  дитячому садку та школі
+                                </a>
+                                <p class="item-publications__date">
+                                  5 Лютого 2018
+                                </p>
+                              </div>
+                              <p class="item-publications__text">
+                                Про що йде мова В червні цього року Верховна
+                                Рада внесла зміни до Податкового кодексу
+                                України. Відтепер батьки, які отримують
+                                офіційну…
+                              </p>
+                            </div>
+                          </li>
+                          <li class="publications__item item-publications">
+                            <a
+                              href="publications-entry.html"
+                              class="item-publications__image"
+                            >
+                              <img
+                                src="img/publications/03.jpg"
+                                alt="People are smiling"
+                              />
+                            </a>
+                            <div class="item-publications__body">
+                              <div class="item-publications__heading">
+                                <a
+                                  href="publications-entry.html"
+                                  class="item-publications__title"
+                                >
+                                  Заповіт міленіала
+                                </a>
+                                <p class="item-publications__date">19 серпня</p>
+                              </div>
+                              <p class="item-publications__text">
+                                Що і як передаватимуть у спадщину сучасні
+                                влогери, опініон лідери і криптомільйонери
+                                Типовий спадок українського покоління Х виглядає
+                                так: квартира у…
+                              </p>
+                            </div>
+                          </li>
+                          <li class="publications__item item-publications">
+                            <a
+                              href="publications-entry.html"
+                              class="item-publications__image"
+                            >
+                              <img
+                                src="img/publications/01.jpg"
+                                alt="Equity associate"
+                              />
+                            </a>
+                            <div class="item-publications__body">
+                              <div class="item-publications__heading">
+                                <a
+                                  href="publications-entry.html"
+                                  class="item-publications__title"
+                                  >Equity associate</a
+                                >
+                                <p class="item-publications__date">22 квітня</p>
+                              </div>
+                              <p class="item-publications__text">
+                                На проектах я джун. При цьому я співвласник
+                                юридичної фірми. Як це відбулося. Перед вступом
+                                батьки мені казали, що якщо буду…
+                              </p>
+                            </div>
+                          </li>
+                          <li class="publications__item item-publications">
+                            <a
+                              href="publications-entry.html"
+                              class="item-publications__image"
+                            >
+                              <img src="img/publications/02.jpg" alt="GDRP" />
+                            </a>
+                            <div class="item-publications__body">
+                              <div class="item-publications__heading">
+                                <a
+                                  href="publications-entry.html"
+                                  class="item-publications__title"
+                                >
+                                  Штраф для «Корпорації добра»: що буде з Google
+                                  та іншими за порушення GDPR
+                                </a>
+                                <p class="item-publications__date">
+                                  29 вересня
+                                </p>
+                              </div>
+                              <p class="item-publications__text">
+                                І чому стягнення у 50 млн євро може стати
+                                доленосним прецедентом За матеріалами Mind.ua 21
+                                січня Національна комісія із захисту даних.
+                              </p>
+                            </div>
+                          </li>
+                        </ul>
+                        <button
+                          class="publications__button button"
+                          type="button"
+                        >
+                          Ще публікації
+                        </button>
+                      </div>
+                    </section>
+                  </div>
+                  <div id="company" class="tabs-publications-page__tab">
+                    <section class="page__publications publications">
+                      <div class="publications__wrapper">
+                        <ul class="publications__list">
+                          <li class="publications__item item-publications">
+                            <div class="item-publications__body">
+                              <div class="item-publications__heading">
+                                <a
+                                  href="publications-entry.html"
+                                  class="item-publications__title"
+                                >
+                                  Валютний контроль помер, хай живе валютний
+                                  контроль!
+                                </a>
+                                <p class="item-publications__date">14 червня</p>
+                              </div>
+                              <p class="item-publications__text">
+                                Експерти проводять конференції, круглі столи та
+                                іншого штибу заходи на тему «лібералізація
+                                валютного законодавства».
+                                Юристи-експерти-новелісти стирають пальці об.
+                              </p>
+                            </div>
+                          </li>
+                          <li class="publications__item item-publications">
+                            <a
+                              href="publications-entry.html"
+                              class="item-publications__image"
+                            >
+                              <img
+                                src="img/publications/company-1.jpg"
+                                alt="Equity associate"
+                              />
+                            </a>
+                            <div class="item-publications__body">
+                              <div class="item-publications__heading">
+                                <a
+                                  href="publications-entry.html"
+                                  class="item-publications__title"
+                                  >Equity associate</a
+                                >
+                                <p class="item-publications__date">22 квітня</p>
+                              </div>
+                              <p class="item-publications__text">
+                                На проектах я джун. При цьому я співвласник
+                                юридичної фірми. Як це відбулося. Перед вступом
+                                батьки мені казали, що якщо буду…
+                              </p>
+                            </div>
+                          </li>
+                          <li class="publications__item item-publications">
+                            <a
+                              href="publications-entry.html"
+                              class="item-publications__image"
+                            >
+                              <img
+                                src="img/publications/company-1.jpg"
+                                alt="Equity associate"
+                              />
+                            </a>
+                            <div class="item-publications__body">
+                              <div class="item-publications__heading">
+                                <a
+                                  href="publications-entry.html"
+                                  class="item-publications__title"
+                                  >Equity associate</a
+                                >
+                                <p class="item-publications__date">22 квітня</p>
+                              </div>
+                              <p class="item-publications__text">
+                                На проектах я джун. При цьому я співвласник
+                                юридичної фірми. Як це відбулося. Перед вступом
+                                батьки мені казали, що якщо буду…
+                              </p>
+                            </div>
+                          </li>
+                          <li class="publications__item item-publications">
+                            <a
+                              href="publications-entry.html"
+                              class="item-publications__image"
+                            >
+                              <img
+                                src="img/publications/company-2.jpg"
+                                alt="Money"
+                              />
+                            </a>
+                            <div class="item-publications__body">
+                              <div class="item-publications__heading">
+                                <a
+                                  href="publications-entry.html"
+                                  class="item-publications__title"
+                                >
+                                  Штраф для «Корпорації добра»: що буде з Google
+                                  та іншими за порушення GDPR
+                                </a>
+                                <p class="item-publications__date">
+                                  29 вересня
+                                </p>
+                              </div>
+                              <p class="item-publications__text">
+                                І чому стягнення у 50 млн євро може стати
+                                доленосним прецедентом За матеріалами Mind.ua 21
+                                січня Національна комісія із захисту даних.
+                              </p>
+                            </div>
+                          </li>
+                          <li class="publications__item item-publications">
+                            <a
+                              href="publications-entry.html"
+                              class="item-publications__image"
+                            >
+                              <img
+                                src="img/publications/company-3.jpg"
+                                alt="Phone with icons of different social networks"
+                              />
+                            </a>
+                            <div class="item-publications__body">
+                              <div class="item-publications__heading">
+                                <a
+                                  href="publications-entry.html"
+                                  class="item-publications__title"
+                                >
+                                  Заповіт міленіала
+                                </a>
+                                <p class="item-publications__date">19 серпня</p>
+                              </div>
+                              <p class="item-publications__text">
+                                Що і як передаватимуть у спадщину сучасні
+                                влогери, опініон лідери і криптомільйонери
+                                Типовий спадок українського покоління Х виглядає
+                                так: квартира у…
+                              </p>
+                            </div>
+                          </li>
+                          <li class="publications__item item-publications">
+                            <div class="item-publications__body">
+                              <div class="item-publications__heading">
+                                <a
+                                  href="publications-entry.html"
+                                  class="item-publications__title"
+                                >
+                                  Валютний контроль помер, хай живе валютний
+                                  контроль!
+                                </a>
+                                <p class="item-publications__date">14 червня</p>
+                              </div>
+                              <p class="item-publications__text">
+                                Експерти проводять конференції, круглі столи та
+                                іншого штибу заходи на тему «лібералізація
+                                валютного законодавства».
+                                Юристи-експерти-новелісти стирають пальці об.
+                              </p>
+                            </div>
+                          </li>
+                          <li class="publications__item item-publications">
+                            <a
+                              href="publications-entry.html"
+                              class="item-publications__image"
+                            >
+                              <img
+                                src="img/publications/company-5.jpg"
+                                alt="The kid is laughing"
+                              />
+                            </a>
+                            <div class="item-publications__body">
+                              <div class="item-publications__heading">
+                                <a
+                                  href="publications-entry.html"
+                                  class="item-publications__title"
+                                >
+                                  Компенсація витрат на навчання дитини в
+                                  дитячому садку та школі
+                                </a>
+                                <p class="item-publications__date">
+                                  5 Лютого 2018
+                                </p>
+                              </div>
+                              <p class="item-publications__text">
+                                Про що йде мова В червні цього року Верховна
+                                Рада внесла зміни до Податкового кодексу
+                                України. Відтепер батьки, які отримують
+                                офіційну…
+                              </p>
+                            </div>
+                          </li>
+                          <li class="publications__item item-publications">
+                            <a
+                              href="publications-entry.html"
+                              class="item-publications__image"
+                            >
+                              <img
+                                src="img/publications/company-4.jpg"
+                                alt="Man with MacBook and a horse"
+                              />
+                            </a>
+                            <div class="item-publications__body">
+                              <div class="item-publications__heading">
+                                <a
+                                  href="publications-entry.html"
+                                  class="item-publications__title"
+                                >
+                                  Закон про мови: як зробити свій сайт
+                                  відповідним
+                                </a>
+                                <p class="item-publications__date">19 серпня</p>
+                              </div>
+                              <p class="item-publications__text">
+                                Наталія Кирик, керівник контент студії
+                                Wordfactory.ua По-перше, це красиво! Це аргумент
+                                номер один на користь україномовного сайту.
+                                По-друге, це ефективно. У…
+                              </p>
+                            </div>
+                          </li>
+                          <li class="publications__item item-publications">
+                            <a
+                              href="publications-entry.html"
+                              class="item-publications__image"
+                            >
+                              <img
+                                src="img/publications/company-5.jpg"
+                                alt="The kid is laughing"
+                              />
+                            </a>
+                            <div class="item-publications__body">
+                              <div class="item-publications__heading">
+                                <a
+                                  href="publications-entry.html"
+                                  class="item-publications__title"
+                                >
+                                  Компенсація витрат на навчання дитини в
+                                  дитячому садку та школі
+                                </a>
+                                <p class="item-publications__date">
+                                  5 Лютого 2018
+                                </p>
+                              </div>
+                              <p class="item-publications__text">
+                                Про що йде мова В червні цього року Верховна
+                                Рада внесла зміни до Податкового кодексу
+                                України. Відтепер батьки, які отримують
+                                офіційну…
+                              </p>
+                            </div>
+                          </li>
+                          <li class="publications__item item-publications">
+                            <a
+                              href="publications-entry.html"
+                              class="item-publications__image"
+                            >
+                              <img
+                                src="img/publications/company-2.jpg"
+                                alt="Money"
+                              />
+                            </a>
+                            <div class="item-publications__body">
+                              <div class="item-publications__heading">
+                                <a
+                                  href="publications-entry.html"
+                                  class="item-publications__title"
+                                >
+                                  Штраф для «Корпорації добра»: що буде з Google
+                                  та іншими за порушення GDPR
+                                </a>
+                                <p class="item-publications__date">
+                                  29 вересня
+                                </p>
+                              </div>
+                              <p class="item-publications__text">
+                                І чому стягнення у 50 млн євро може стати
+                                доленосним прецедентом За матеріалами Mind.ua 21
+                                січня Національна комісія із захисту даних.
+                              </p>
+                            </div>
+                          </li>
+                          <li class="publications__item item-publications">
+                            <a
+                              href="publications-entry.html"
+                              class="item-publications__image"
+                            >
+                              <img
+                                src="img/publications/company-3.jpg"
+                                alt="Phone with icons of different social networks"
+                              />
+                            </a>
+                            <div class="item-publications__body">
+                              <div class="item-publications__heading">
+                                <a
+                                  href="publications-entry.html"
+                                  class="item-publications__title"
+                                >
+                                  Заповіт міленіала
+                                </a>
+                                <p class="item-publications__date">19 серпня</p>
+                              </div>
+                              <p class="item-publications__text">
+                                Що і як передаватимуть у спадщину сучасні
+                                влогери, опініон лідери і криптомільйонери
+                                Типовий спадок українського покоління Х виглядає
+                                так: квартира у…
+                              </p>
+                            </div>
+                          </li>
+                        </ul>
+                        <button
+                          class="publications__button button"
+                          type="button"
+                        >
+                          Ще публікації
+                        </button>
+                      </div>
+                    </section>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__wrapper">
+            <div class="footer__body">
+              <div class="footer__location location-footer">
+                <p class="location-footer__text">Одеса, Адміральський пр., 3</p>
+                <a href="#" class="location-footer__link">Подивитися на мапі</a>
+              </div>
+              <div class="footer__contacts">
+                <a href="#" class="footer-facebook">
+                  <svg
+                    class="icon-facebook"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_1_597)">
+                      <path
+                        class="icon-facebook"
+                        d="M24 12.0733C24 5.40541 18.6274 0 12 0C5.37258 0 0 5.40541 0 12.0733C0 18.0995 4.38823 23.0943 10.125 24V15.5633H7.07813V12.0733H10.125V9.41343C10.125 6.38755 11.9165 4.71615 14.6576 4.71615C15.9705 4.71615 17.3438 4.95195 17.3438 4.95195V7.92313H15.8306C14.3399 7.92313 13.875 8.85379 13.875 9.80857V12.0733H17.2031L16.6711 15.5633H13.875V24C19.6118 23.0943 24 18.0995 24 12.0733Z"
+                        fill="#24A3FF"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_1_597">
+                        <rect width="24" height="24" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </a>
+                <a href="tel:+380503901591" class="footer__phone"
+                  >+38 (050) 390 15 91</a
+                >
+                <a href="mailto:contact@hlegals.net" class="footer__email"
+                  >contact@hlegals.net</a
+                >
+              </div>
+            </div>
+            <p class="footer__copyright">
+              &copy; 2021 ТОВ Юридична компанія «HLEGALS»
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="js/burger.js"></script>
+    <script src="js/tabs.js"></script>
+    <script>
+      // Get the element with id="defaultOpen" and click on it
+      document.getElementById("defaultOpen").click();
+    </script>
+  </body>
+</html>
